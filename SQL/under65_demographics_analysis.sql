@@ -6,6 +6,7 @@
 -- 4. Work Type
 -- 5. Residence Type
 -- 6. Smoking Status
+-- ==============================================
 
 -- ==============================================
 -- Gender Distribution
@@ -49,8 +50,8 @@ age_group_stats AS(
 		age_group,
 		COUNT(*) AS total_group_count,
 		SUM(CASE WHEN stroke = 1 THEN 1 ELSE 0 END) AS stroke_count
-		FROM stroke_data_under65
-		GROUP BY age_group
+	FROM stroke_data_under65
+	GROUP BY age_group
 )
 SELECT
 	age_group,
@@ -70,7 +71,7 @@ ORDER BY CASE age_group
 END;
 
 -- ==============================================
--- Marriage History
+-- Marriage History Distribution
 -- WARNING: Run under65_engineer_categorical_columns script first
 -- ==============================================
 WITH total_data AS(
@@ -84,8 +85,8 @@ ever_married_stats AS(
 		ever_married_status,
 		COUNT(*) AS total_group_count,
 		SUM(CASE WHEN stroke = 1 THEN 1 ELSE 0 END) AS stroke_count
-		FROM stroke_data_under65
-		GROUP BY ever_married_status
+	FROM stroke_data_under65
+	GROUP BY ever_married_status
 )
 SELECT
 	ever_married_status,
@@ -96,3 +97,83 @@ SELECT
 	ROUND(100.0 * stroke_count / ts.stroke_total,2) AS "% of Stroke Cases"
 FROM ever_married_stats, total_data td, total_strokes ts
 ORDER BY ever_married_status;
+
+-- ==============================================
+-- Work Type Distribution
+-- ==============================================
+
+WITH total_data AS(
+	SELECT COUNT(*) AS total_count FROM stroke_data_under65
+),
+total_strokes AS (
+	SELECT COUNT(*) AS stroke_total FROM stroke_data_under65 WHERE stroke = 1
+),
+work_type_stats AS(
+	SELECT
+		work_type,
+		COUNT(*) total_group_count,
+		SUM(CASE WHEN stroke = 1 THEN 1 ELSE 0 END) AS stroke_count
+	FROM stroke_data_under65
+	GROUP BY work_type
+)
+SELECT 
+	work_type,
+	total_group_count AS "Count",
+	ROUND(100.0 * total_group_count / td.total_count,2) AS "Population %",
+	stroke_count AS "Stroke Count",
+	ROUND(100.0 * stroke_count / total_group_count,2) AS "In Group Stroke %",
+	ROUND(100.0 * stroke_count / ts.stroke_total,2) AS "% of Stroke Cases"
+FROM work_type_stats, total_data td, total_strokes ts
+ORDER BY stroke_count DESC;
+
+-- ==============================================
+-- Residence Type Distribution
+-- ==============================================
+WITH total_data AS(
+	SELECT COUNT(*) AS total_count FROM stroke_data_under65
+),
+total_strokes AS (
+	SELECT COUNT(*) AS stroke_total FROM stroke_data_under65 WHERE stroke = 1
+),
+residence_type_stats AS (
+	SELECT 
+		residence_type,
+		COUNT(*) AS total_group_count,
+		SUM(CASE WHEN stroke = 1 THEN 1 ELSE 0 END) AS stroke_count
+	FROM stroke_data_under65
+	GROUP BY residence_type
+)
+SELECT
+	residence_type,
+	total_group_count AS "Count",
+	ROUND(100.0 * total_group_count / td.total_count,2) AS "Population %",
+	stroke_count AS "Stroke Count",
+	ROUND(100.0 * stroke_count / total_group_count,2) AS "In Group Stroke %",
+	ROUND(100.0 * stroke_count / ts.stroke_total,2) AS "% of Stroke Cases"
+FROM residence_type_stats, total_data td, total_strokes ts;
+
+-- ==============================================
+-- Smoking Status Distribution
+-- ==============================================
+WITH total_data AS(
+	SELECT COUNT(*) AS total_count FROM stroke_data_under65
+),
+total_strokes AS (
+	SELECT COUNT(*) AS stroke_total FROM stroke_data_under65 WHERE stroke = 1
+),
+smoking_status_stats AS(
+	SELECT
+		smoking_status,
+		COUNT(*) AS total_group_count,
+		SUM(CASE WHEN stroke = 1 THEN 1 ELSE 0 END) AS stroke_count
+	FROM stroke_data_under65
+	GROUP BY smoking_status
+)
+SELECT
+	smoking_status,
+	total_group_count AS "Count",
+	ROUND(100.0 * total_group_count / td.total_count,2) AS "Population %",
+	stroke_count AS "Stroke Count",
+	ROUND(100.0 * stroke_count / total_group_count,2) AS "In Group Stroke %",
+	ROUND(100.0 * stroke_count / ts.stroke_total,2) AS "% of Stroke Cases"
+FROM smoking_status_stats, total_data td, total_strokes ts;

@@ -4,6 +4,7 @@
 WITH base AS(
 	SELECT 
 		COUNT(*) AS total_rows,
+		COUNT(*) FILTER (WHERE age >= 65) AS over65_count,
 		COUNT(*) FILTER (WHERE stroke = 1) AS number_of_stroke,
 		COUNT(*) FILTER (WHERE stroke = 1 AND age >= 65) AS stroke_65_and_over,
 		COUNT(*) FILTER (WHERE stroke = 1 AND age < 65) AS stroke_under_65
@@ -17,5 +18,5 @@ SELECT
 	ROUND(stroke_65_and_over * 100.0 / total_rows, 2) AS percent_stroke_over_64,
 	stroke_under_65,
 	ROUND(stroke_under_65 * 100.0 / total_rows,2) percent_stroke_under_65,
-	ROUND(stroke_under_65 * 100.0 / (total_rows - stroke_65_and_over),2) AS stroke_percent_after_trim
+	ROUND(stroke_under_65 * 100.0 / (total_rows - over65_count),2) AS stroke_percent_after_trim
 FROM base;
