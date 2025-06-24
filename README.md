@@ -18,8 +18,7 @@
 ![Overall Data Summary](presentation_visuals/whole_study_table_and_graph.png)  
 *Figure 1. Summary of Overall Category Statistical Representations*
 
-Did you know that nearly **90% of stroke patients under 65 are married?**  
-It's a surprising association, but this highlights the importance of remembering that *correlation is not causation*.   
+Did you know that nearly **90% of stroke patients under 65 are married?** It's a surprising association, but this highlights the importance of remembering that *correlation is not causation*.   
 
 While **age** is a well-known predictor of stroke, this project focuses on the **risk factors that emerge well before the age of 65**, particularly the **top medically alterable risk factors** that can be addressed through early intervention.    
 
@@ -100,14 +99,14 @@ Pre-senior (55-64) is the third highest risk factor, age is still important but 
 ![Disproportionate Stroke Burden](presentation_visuals/under65_stroke_contribution_vs_population.png)
 *Figure 4. Each top risk factor accounts for a much higher share of stroke cases than their share of the total population.*
 
-### Heart Disease  
+### Heart Disease
 
-According to the Centers for Disease Control (CDC), *“hypertension is a symptomless, silent risk factor that can occur at any age.”* Patients with hypertension have a stroke rate of **5.97%** and account for **17.78%** of stroke cases.  
+**Heart disease** is the top stroke risk factor in this analysis. Patients with heart disease had an in-group stroke rate of **13.54%**. They represented just **2.35%** of the population, but accounted for **14.44%** of all stroke cases.
 
-Prevalence of heart disease begins to accelerate by midlife. The number of patients with heart disease **increases sixfold** from adulthood (25–34) to midlife adulthood (35–44). 
+Prevalence of heart disease begins to accelerate by midlife. The number of patients with heart disease **increases sixfold** from adulthood (25–34) to midlife adulthood (35–44).
 
-![Age vs Heart Disease Table](presentation_visuals/under65_age_hd_table.png)  
-*Figure 5. Heart disease prevalence jumps significantly in midlife, suggesting a key window for screening.*  
+![Age vs Heart Disease Table](presentation_visuals/under65_age_vs_hd_table.png)  
+*Figure 5. Heart disease prevalence jumps significantly in midlife, suggesting a key window for screening.* 
 
 ### Hypertension 
 
