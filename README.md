@@ -105,7 +105,7 @@ Pre-senior (55-64) is the third highest risk factor, age is still important but 
 
 Prevalence of heart disease begins to accelerate by midlife. The number of patients with heart disease **increases sixfold** from adulthood (25–34) to midlife adulthood (35–44).
 
-![Age vs Heart Disease Table](presentation_visuals/under65_age_vs_hd_table.png)  
+![Age vs Heart Disease Table](presentation_visuals/under65_age_hd_table.png)  
 *Figure 5. Heart disease prevalence jumps significantly in midlife, suggesting a key window for screening.* 
 
 ### Hypertension 
