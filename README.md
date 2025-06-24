@@ -86,7 +86,7 @@ Patients over 65 in this dataset averaged more than one major risk factor (heart
 
 ### Top Risk Factors Under 65
 
-After filtering the data for patients under the age of 65, the dominance of age was tempered. In the visualization belowe, we can see which risk factors have the **strongest direct relationshiip** with stroke rate.
+After filtering the data for patients under the age of 65, the dominance of age was tempered. In **Figure 3**, we can see which risk factors have the **strongest direct relationship** with stroke rate.
 
 Pre-senior (55-64) is the third highest risk factor, age is still important but it is no longer overwhelmingly dictating stroke risk.
 
@@ -106,7 +106,7 @@ According to the Centers for Disease Control (CDC), *“hypertension is a sympto
 
 Prevalence of heart disease begins to accelerate by midlife. The number of patients with heart disease **increases sixfold** from adulthood (25–34) to midlife adulthood (35–44). 
 
-![Age vs Heart Disease Table](presentation_visuals/under65_age_vs_hd_table.png)  
+![Age vs Heart Disease Table](presentation_visuals/under65_age_hd_table.png)  
 *Figure 5. Heart disease prevalence jumps significantly in midlife, suggesting a key window for screening.*  
 
 ### Hypertension 
@@ -115,7 +115,7 @@ According to the Centers for Disease Control (CDC) "*hypertension is a symptomle
 
 **Figure 6** shows an eleven-fold jump of hypertension cases from childhood (**0-17**) to young adulthood (**18-24**). Early detection through regular blood pressure monitoring is key to combating this silent stroke risk factor.
 
-![Age vs Hypertension Table](presentation_visuals/under65_age_vs_hp_table.png)
+![Age vs Hypertension Table](presentation_visuals/under65_age_hp_table.png)
 *Figure 6. Hypertension prevalence jumps significantly. Blood pressure monitoring and care planning starting at age 18 is recommended.*  
 
 ### Diabetes
@@ -125,7 +125,7 @@ The in-group stroke rate for patients with diabetes (**4.78%**) is nearly **thre
 ![Diabetic vs Non-Diabetic Patient Comparison](presentation_visuals/under65_diabetes_comparison_bar.png)  
 *Figure 7. Combined diabetes and high diabetes group stroke rate is 4.78%.*
 
-![Age vs Diabetes Table](presentation_visuals/under65_age_vs_diabetes_table.png)  
+![Age vs Diabetes Table](presentation_visuals/under65_age_diabetes_table.png)  
 *Figure 8. 1 in 4 older adults and 1 in 5 pre-seniors have diabetes.*
 
 ### Smoking  
@@ -134,7 +134,7 @@ Patients who **smoke** have a stroke rate of **3.79%**, which is only slightly h
 
 Nearly 1 in 4 patients have a history of smoking by young adulthood (ages 18–24). When it comes to smoking, **prevention** is the most effective strategy, since the stroke rate remains high even after quitting.
 
-![Age vs Smoking Table](presentation_visuals/under65_age_vs_smoking_table.png)  
+![Age vs Smoking Table](presentation_visuals/under65_age_smoking_table.png)  
 *Figure 9. Sharp increase in the number of patients that have a history of smoking during young adult stage.*
 
 
