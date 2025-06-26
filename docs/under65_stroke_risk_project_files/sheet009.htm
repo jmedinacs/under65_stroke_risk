@@ -1,0 +1,880 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../under65_stroke_risk_project.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(8);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../under65_stroke_risk_project.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#467886" vlink="#96607D">
+
+<table border=0 cellpadding=0 cellspacing=0 width=1916 style='border-collapse:
+ collapse;table-layout:fixed;width:1436pt'>
+ <col width=64 style='width:48pt'>
+ <col width=97 style='mso-width-source:userset;mso-width-alt:3441;width:73pt'>
+ <col width=104 style='mso-width-source:userset;mso-width-alt:3697;width:78pt'>
+ <col width=103 style='mso-width-source:userset;mso-width-alt:3669;width:77pt'>
+ <col width=57 style='mso-width-source:userset;mso-width-alt:2019;width:43pt'>
+ <col width=127 style='mso-width-source:userset;mso-width-alt:4522;width:95pt'>
+ <col width=126 style='mso-width-source:userset;mso-width-alt:4494;width:95pt'>
+ <col width=112 style='mso-width-source:userset;mso-width-alt:3982;width:84pt'>
+ <col width=62 style='mso-width-source:userset;mso-width-alt:2190;width:46pt'>
+ <col width=76 style='mso-width-source:userset;mso-width-alt:2702;width:57pt'>
+ <col width=70 style='mso-width-source:userset;mso-width-alt:2474;width:52pt'>
+ <col width=102 style='mso-width-source:userset;mso-width-alt:3640;width:77pt'>
+ <col width=186 style='mso-width-source:userset;mso-width-alt:6599;width:139pt'>
+ <col width=124 style='mso-width-source:userset;mso-width-alt:4408;width:93pt'>
+ <col width=97 style='mso-width-source:userset;mso-width-alt:3441;width:73pt'>
+ <col width=180 style='mso-width-source:userset;mso-width-alt:6400;width:135pt'>
+ <col width=118 style='mso-width-source:userset;mso-width-alt:4181;width:88pt'>
+ <col width=111 style='mso-width-source:userset;mso-width-alt:3953;width:83pt'>
+ <col width=62 style='mso-width-source:userset;mso-width-alt:2190;width:46pt'>
+ <col width=132 style='mso-width-source:userset;mso-width-alt:4693;width:99pt'>
+ <col width=113 style='mso-width-source:userset;mso-width-alt:4010;width:85pt'>
+ <col width=62 style='mso-width-source:userset;mso-width-alt:2190;width:46pt'>
+ <col width=134 style='mso-width-source:userset;mso-width-alt:4750;width:100pt'>
+ <col width=80 style='mso-width-source:userset;mso-width-alt:2844;width:60pt'>
+ <col width=62 style='mso-width-source:userset;mso-width-alt:2190;width:46pt'>
+ <col width=101 style='mso-width-source:userset;mso-width-alt:3584;width:76pt'>
+ <col width=76 style='mso-width-source:userset;mso-width-alt:2702;width:57pt'>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 width=64 style='height:14.4pt;width:48pt'></td>
+  <td colspan=4 class=xl83 width=361 style='width:271pt'>SQL Data</td>
+  <td width=127 style='width:95pt'></td>
+  <td width=126 style='width:95pt'></td>
+  <td width=112 style='width:84pt'></td>
+  <td width=62 style='width:46pt'></td>
+  <td width=76 style='width:57pt'></td>
+  <td width=70 style='width:52pt'></td>
+  <td width=102 style='width:77pt'></td>
+  <td width=186 style='width:139pt'></td>
+  <td width=124 style='width:93pt'></td>
+  <td width=97 style='width:73pt'></td>
+  <td width=180 style='width:135pt'></td>
+  <td width=118 style='width:88pt'></td>
+  <td width=111 style='width:83pt'></td>
+ </tr>
+ <tr height=24 style='height:18.0pt'>
+  <td height=24 style='height:18.0pt'></td>
+  <td>feature</td>
+  <td>category</td>
+  <td>stroke_status</td>
+  <td>count</td>
+  <td colspan=7 style='mso-ignore:colspan'></td>
+  <td colspan=2 class=xl83>Expected Values</td>
+  <td></td>
+  <td colspan=3 class=xl157 style='border-right:.5pt solid black'>Chi-Square
+  Test</td>
+ </tr>
+ <tr height=21 style='height:15.6pt'>
+  <td height=21 style='height:15.6pt'></td>
+  <td>ever_married</td>
+  <td>married</td>
+  <td>had stroke</td>
+  <td align=right>81</td>
+  <td></td>
+  <td style='font-size:11.0pt;color:black;font-weight:700;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  background:#C0E6F5;mso-pattern:#C0E6F5 none'>Sum of count</td>
+  <td style='font-size:11.0pt;color:black;font-weight:700;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  background:#C0E6F5;mso-pattern:#C0E6F5 none'>Column Labels</td>
+  <td style='font-size:11.0pt;color:black;font-weight:700;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  background:#C0E6F5;mso-pattern:#C0E6F5 none'></td>
+  <td style='font-size:11.0pt;color:black;font-weight:700;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  background:#C0E6F5;mso-pattern:#C0E6F5 none'></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl83>had stroke</td>
+  <td class=xl83>no stroke</td>
+  <td></td>
+  <td class=xl85 style='border-top:none'>feature</td>
+  <td class=xl85 style='border-top:none;border-left:none'>p-value</td>
+  <td class=xl100 style='border-top:none;border-left:none'>significant</td>
+ </tr>
+ <tr height=21 style='height:15.6pt'>
+  <td height=21 style='height:15.6pt'></td>
+  <td>ever_married</td>
+  <td>married</td>
+  <td>no stroke</td>
+  <td align=right>2333</td>
+  <td></td>
+  <td style='font-size:11.0pt;color:black;font-weight:700;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  border-top:none;border-right:none;border-bottom:.5pt solid #44B3E1;
+  border-left:none;background:#C0E6F5;mso-pattern:#C0E6F5 none'>Row Labels</td>
+  <td style='font-size:11.0pt;color:black;font-weight:700;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  border-top:none;border-right:none;border-bottom:.5pt solid #44B3E1;
+  border-left:none;background:#C0E6F5;mso-pattern:#C0E6F5 none'>had stroke</td>
+  <td style='font-size:11.0pt;color:black;font-weight:700;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  border-top:none;border-right:none;border-bottom:.5pt solid #44B3E1;
+  border-left:none;background:#C0E6F5;mso-pattern:#C0E6F5 none'>no stroke</td>
+  <td style='font-size:11.0pt;color:black;font-weight:700;text-decoration:none;
+  text-underline-style:none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  border-top:none;border-right:none;border-bottom:.5pt solid #44B3E1;
+  border-left:none;background:#C0E6F5;mso-pattern:#C0E6F5 none'>Grand Total</td>
+  <td></td>
+  <td class=xl98>married</td>
+  <td class=xl96 align=right style='border-left:none'>53.22390985</td>
+  <td class=xl96 align=right style='border-left:none'>2360.77609</td>
+  <td></td>
+  <td class=xl97 style='border-top:none'>ever_married</td>
+  <td class=xl99 align=right style='border-top:none;border-left:none;
+  font-size:12.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  border:.5pt solid windowtext;background:#D0D0D0;mso-pattern:black none'>1.7144E-09</td>
+  <td class=xl97 style='border-top:none;border-left:none'>yes</td>
+ </tr>
+ <tr height=21 style='height:15.6pt'>
+  <td height=21 style='height:15.6pt'></td>
+  <td>ever_married</td>
+  <td>never married</td>
+  <td>had stroke</td>
+  <td align=right>9</td>
+  <td></td>
+  <td class=xl94 style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>ever_married</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>90</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>3992</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>4082</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>never married</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>36.77609015</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>1631.22391</td>
+  <td></td>
+  <td class=xl97 style='border-top:none'>gender</td>
+  <td class=xl99 align=right style='border-top:none;border-left:none;
+  font-size:12.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  border:.5pt solid windowtext;background:#A3A3A3;mso-pattern:black none'>0.3238055</td>
+  <td class=xl97 style='border-top:none;border-left:none'>no</td>
+ </tr>
+ <tr height=21 style='height:15.6pt'>
+  <td height=21 style='height:15.6pt'></td>
+  <td>ever_married</td>
+  <td>never married</td>
+  <td>no stroke</td>
+  <td align=right>1659</td>
+  <td></td>
+  <td class=xl95>married</td>
+  <td align=right>81</td>
+  <td align=right>2333</td>
+  <td align=right>2414</td>
+  <td></td>
+  <td class=xl96 style='border-top:none'>&nbsp;</td>
+  <td class=xl96 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl96 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td></td>
+  <td class=xl97 style='border-top:none'>heart_disease</td>
+  <td class=xl99 align=right style='border-top:none;border-left:none;
+  font-size:12.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  border:.5pt solid windowtext;background:#D0D0D0;mso-pattern:black none'>1.93107E-14</td>
+  <td class=xl97 style='border-top:none;border-left:none'>yes</td>
+ </tr>
+ <tr height=21 style='height:15.6pt'>
+  <td height=21 style='height:15.6pt'></td>
+  <td>gender</td>
+  <td>female</td>
+  <td>had stroke</td>
+  <td align=right>48</td>
+  <td></td>
+  <td class=xl95>never married</td>
+  <td align=right>9</td>
+  <td align=right>1659</td>
+  <td align=right>1668</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>female</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>52.56246938</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>2331.437531</td>
+  <td></td>
+  <td class=xl97 style='border-top:none'>hypertension</td>
+  <td class=xl99 align=right style='border-top:none;border-left:none;
+  font-size:12.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  border:.5pt solid windowtext;background:#D0D0D0;mso-pattern:black none'>1.40644E-05</td>
+  <td class=xl97 style='border-top:none;border-left:none'>yes</td>
+ </tr>
+ <tr height=21 style='height:15.6pt'>
+  <td height=21 style='height:15.6pt'></td>
+  <td>gender</td>
+  <td>female</td>
+  <td>no stroke</td>
+  <td align=right>2336</td>
+  <td></td>
+  <td class=xl94 style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>gender</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>90</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>3992</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>4082</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>male</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>37.43753062</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>1660.562469</td>
+  <td></td>
+  <td class=xl97 style='border-top:none'>residence_type</td>
+  <td class=xl99 align=right style='border-top:none;border-left:none;
+  font-size:12.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  border:.5pt solid windowtext;background:gray;mso-pattern:black none'>0.569317433</td>
+  <td class=xl97 style='border-top:none;border-left:none'>no</td>
+ </tr>
+ <tr height=21 style='height:15.6pt'>
+  <td height=21 style='height:15.6pt'></td>
+  <td>gender</td>
+  <td>male</td>
+  <td>had stroke</td>
+  <td align=right>42</td>
+  <td></td>
+  <td class=xl95>female</td>
+  <td align=right>48</td>
+  <td align=right>2336</td>
+  <td align=right>2384</td>
+  <td></td>
+  <td class=xl96 style='border-top:none'>&nbsp;</td>
+  <td class=xl96 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl96 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td></td>
+  <td class=xl97 style='border-top:none'>smoking_status</td>
+  <td class=xl99 align=right style='border-top:none;border-left:none;
+  font-size:12.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  border:.5pt solid windowtext;background:#D0D0D0;mso-pattern:black none'>0.000122057</td>
+  <td class=xl97 style='border-top:none;border-left:none'>yes</td>
+ </tr>
+ <tr height=21 style='height:15.6pt'>
+  <td height=21 style='height:15.6pt'></td>
+  <td>gender</td>
+  <td>male</td>
+  <td>no stroke</td>
+  <td align=right>1656</td>
+  <td></td>
+  <td class=xl95>male</td>
+  <td align=right>42</td>
+  <td align=right>1656</td>
+  <td align=right>1698</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>heart disease</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>2.116609505</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>93.88339049</td>
+  <td></td>
+  <td class=xl97 style='border-top:none'>work_type</td>
+  <td class=xl99 align=right style='border-top:none;border-left:none;
+  font-size:12.0pt;color:black;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:"Aptos Narrow", sans-serif;
+  border:.5pt solid windowtext;background:#D0D0D0;mso-pattern:black none'>0.004206256</td>
+  <td class=xl97 style='border-top:none;border-left:none'>yes</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>heart_disease</td>
+  <td>heart disease</td>
+  <td>had stroke</td>
+  <td align=right>13</td>
+  <td></td>
+  <td class=xl94 style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>heart_disease</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>90</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>3992</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>4082</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>no heart disease</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>87.88339049</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>3898.11661</td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.4pt'>
+  <td height=23 style='height:17.4pt'></td>
+  <td>heart_disease</td>
+  <td>heart disease</td>
+  <td>no stroke</td>
+  <td align=right>83</td>
+  <td></td>
+  <td class=xl95>heart disease</td>
+  <td align=right>13</td>
+  <td align=right>83</td>
+  <td align=right>96</td>
+  <td></td>
+  <td class=xl96 style='border-top:none'>&nbsp;</td>
+  <td class=xl96 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl96 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td></td>
+  <td colspan=2 rowspan=8 class=xl79 width=298 style='width:223pt'>The
+  Chi-Square Test indicates that for patients under 65, <font class="font6">gender</font><font
+  class="font0"> and </font><font class="font6">residence_type</font><font
+  class="font0"> are</font><font class="font6"> not statistically significant
+  predictors</font><font class="font0"> of stroke, as their p-values exceed the
+  0.05 significance threshold.<br>
+    <br>
+    Gender and residence_type features will be </font><font class="font6">dropped
+  from the analysis</font><font class="font0">, moving forward.</font></td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>heart_disease</td>
+  <td>no heart disease</td>
+  <td>had stroke</td>
+  <td align=right>77</td>
+  <td></td>
+  <td class=xl95>no heart disease</td>
+  <td align=right>77</td>
+  <td align=right>3909</td>
+  <td align=right>3986</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>hypertension</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>5.908868202</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>262.0911318</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>heart_disease</td>
+  <td>no heart disease</td>
+  <td>no stroke</td>
+  <td align=right>3909</td>
+  <td></td>
+  <td class=xl94 style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>hypertension</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>90</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>3992</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>4082</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>no hypertension</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>84.0911318</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>3729.908868</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>hypertension</td>
+  <td>hypertension</td>
+  <td>had stroke</td>
+  <td align=right>16</td>
+  <td></td>
+  <td class=xl95>hypertension</td>
+  <td align=right>16</td>
+  <td align=right>252</td>
+  <td align=right>268</td>
+  <td></td>
+  <td class=xl96 style='border-top:none'>&nbsp;</td>
+  <td class=xl96 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl96 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>hypertension</td>
+  <td>hypertension</td>
+  <td>no stroke</td>
+  <td align=right>252</td>
+  <td></td>
+  <td class=xl95>no hypertension</td>
+  <td align=right>74</td>
+  <td align=right>3740</td>
+  <td align=right>3814</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>rural</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>44.66927976</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>1981.33072</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>hypertension</td>
+  <td>no hypertension</td>
+  <td>had stroke</td>
+  <td align=right>74</td>
+  <td></td>
+  <td class=xl94 style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>residence_type</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>90</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>3992</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>4082</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>urban</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>45.33072024</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>2010.66928</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>hypertension</td>
+  <td>no hypertension</td>
+  <td>no stroke</td>
+  <td align=right>3740</td>
+  <td></td>
+  <td class=xl95>rural</td>
+  <td align=right>42</td>
+  <td align=right>1984</td>
+  <td align=right>2026</td>
+  <td></td>
+  <td class=xl96 style='border-top:none'>&nbsp;</td>
+  <td class=xl96 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl96 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>residence_type</td>
+  <td>rural</td>
+  <td>had stroke</td>
+  <td align=right>42</td>
+  <td></td>
+  <td class=xl95>urban</td>
+  <td align=right>48</td>
+  <td align=right>2008</td>
+  <td align=right>2056</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>formerly smoked</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>12.89808917</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>572.1019108</td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>residence_type</td>
+  <td>rural</td>
+  <td>no stroke</td>
+  <td align=right>1984</td>
+  <td></td>
+  <td class=xl94 style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>smoking_status</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>90</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>3992</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>4082</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>never smoked</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>32.74130328</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>1452.258697</td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='mso-height-source:userset;height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>residence_type</td>
+  <td>urban</td>
+  <td>had stroke</td>
+  <td align=right>48</td>
+  <td></td>
+  <td class=xl95>formerly smoked</td>
+  <td align=right>22</td>
+  <td align=right>563</td>
+  <td align=right>585</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>smokes</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>14.52964233</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>644.4703577</td>
+  <td></td>
+  <td colspan=2 class=xl156>Mann-Whitney Test</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>residence_type</td>
+  <td>urban</td>
+  <td>no stroke</td>
+  <td align=right>2008</td>
+  <td></td>
+  <td class=xl95>never smoked</td>
+  <td align=right>24</td>
+  <td align=right>1461</td>
+  <td align=right>1485</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>unknown</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>29.83096521</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>1323.169035</td>
+  <td></td>
+  <td class=xl102>feature</td>
+  <td class=xl102 style='border-left:none'>p-value</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>smoking_status</td>
+  <td>formerly smoked</td>
+  <td>had stroke</td>
+  <td align=right>22</td>
+  <td></td>
+  <td class=xl95>smokes</td>
+  <td align=right>25</td>
+  <td align=right>634</td>
+  <td align=right>659</td>
+  <td></td>
+  <td class=xl96 style='border-top:none'>&nbsp;</td>
+  <td class=xl96 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td class=xl96 style='border-top:none;border-left:none'>&nbsp;</td>
+  <td></td>
+  <td class=xl97 style='border-top:none'>bmi</td>
+  <td class=xl101 style='border-top:none;border-left:none'>1.06E-06</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>smoking_status</td>
+  <td>formerly smoked</td>
+  <td>no stroke</td>
+  <td align=right>563</td>
+  <td></td>
+  <td class=xl95>unknown</td>
+  <td align=right>19</td>
+  <td align=right>1334</td>
+  <td align=right>1353</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>children</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>15.14698677</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>671.8530132</td>
+  <td></td>
+  <td class=xl97 style='border-top:none'>avg_glucose_level</td>
+  <td class=xl97 style='border-top:none;border-left:none'>0.0001</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>smoking_status</td>
+  <td>never smoked</td>
+  <td>had stroke</td>
+  <td align=right>24</td>
+  <td></td>
+  <td class=xl94 style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>work_type</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>90</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>3992</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:none;border-right:none;
+  border-bottom:.5pt solid #44B3E1;border-left:none'>4082</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>govt_job</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>11.59725625</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>514.4027438</td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>smoking_status</td>
+  <td>never smoked</td>
+  <td>no stroke</td>
+  <td align=right>1461</td>
+  <td></td>
+  <td class=xl95>children</td>
+  <td align=right>2</td>
+  <td align=right>685</td>
+  <td align=right>687</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>never_worked</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>0.485056345</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>21.51494366</td>
+  <td></td>
+  <td colspan=3 rowspan=10 class=xl155 width=409 style='width:306pt'>The
+  Mann–Whitney U Test was <font class="font6">conducted using Python</font><font
+  class="font0">, as Excel does not support this test natively.<br>
+    <br>
+    The script can be found in the python_stat_test folder under the filename
+  mann_whitney_test.py.<br>
+    <br>
+    Both BMI and average glucose level returned p-values</font><font
+  class="font6"> significantly below the 0.05 threshold</font><font
+  class="font0">, indicating that they are</font><font class="font6">
+  statistically significant predictors</font><font class="font0"> of stroke in
+  patients under 65.</font></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>smoking_status</td>
+  <td>smokes</td>
+  <td>had stroke</td>
+  <td align=right>25</td>
+  <td></td>
+  <td class=xl95>govt_job</td>
+  <td align=right>16</td>
+  <td align=right>510</td>
+  <td align=right>526</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>private</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>53.13571779</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>2356.864282</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>smoking_status</td>
+  <td>smokes</td>
+  <td>no stroke</td>
+  <td align=right>634</td>
+  <td></td>
+  <td class=xl95>never_worked</td>
+  <td></td>
+  <td align=right>22</td>
+  <td align=right>22</td>
+  <td></td>
+  <td class=xl98 style='border-top:none'>self-employed</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>9.634982852</td>
+  <td class=xl96 align=right style='border-top:none;border-left:none'>427.3650171</td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>smoking_status</td>
+  <td>unknown</td>
+  <td>had stroke</td>
+  <td align=right>19</td>
+  <td></td>
+  <td class=xl95>private</td>
+  <td align=right>59</td>
+  <td align=right>2351</td>
+  <td align=right>2410</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>smoking_status</td>
+  <td>unknown</td>
+  <td>no stroke</td>
+  <td align=right>1334</td>
+  <td></td>
+  <td class=xl95>self-employed</td>
+  <td align=right>13</td>
+  <td align=right>424</td>
+  <td align=right>437</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>work_type</td>
+  <td>children</td>
+  <td>had stroke</td>
+  <td align=right>2</td>
+  <td></td>
+  <td class=xl94 style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:.5pt solid #44B3E1;
+  border-right:none;border-bottom:none;border-left:none;background:#C0E6F5;
+  mso-pattern:#C0E6F5 none'>Grand Total</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:.5pt solid #44B3E1;
+  border-right:none;border-bottom:none;border-left:none;background:#C0E6F5;
+  mso-pattern:#C0E6F5 none'>630</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:.5pt solid #44B3E1;
+  border-right:none;border-bottom:none;border-left:none;background:#C0E6F5;
+  mso-pattern:#C0E6F5 none'>27944</td>
+  <td align=right style='font-size:11.0pt;color:black;font-weight:700;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:"Aptos Narrow", sans-serif;border-top:.5pt solid #44B3E1;
+  border-right:none;border-bottom:none;border-left:none;background:#C0E6F5;
+  mso-pattern:#C0E6F5 none'>28574</td>
+  <td colspan=5 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>work_type</td>
+  <td>children</td>
+  <td>no stroke</td>
+  <td align=right>685</td>
+  <td colspan=10 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>work_type</td>
+  <td>govt_job</td>
+  <td>had stroke</td>
+  <td align=right>16</td>
+  <td colspan=10 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>work_type</td>
+  <td>govt_job</td>
+  <td>no stroke</td>
+  <td align=right>510</td>
+  <td colspan=10 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>work_type</td>
+  <td>never_worked</td>
+  <td>no stroke</td>
+  <td align=right>22</td>
+  <td colspan=10 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>work_type</td>
+  <td>private</td>
+  <td>had stroke</td>
+  <td align=right>59</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>work_type</td>
+  <td>private</td>
+  <td>no stroke</td>
+  <td align=right>2351</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>work_type</td>
+  <td>self-employed</td>
+  <td>had stroke</td>
+  <td align=right>13</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td>work_type</td>
+  <td>self-employed</td>
+  <td>no stroke</td>
+  <td align=right>424</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=97 style='width:73pt'></td>
+  <td width=104 style='width:78pt'></td>
+  <td width=103 style='width:77pt'></td>
+  <td width=57 style='width:43pt'></td>
+  <td width=127 style='width:95pt'></td>
+  <td width=126 style='width:95pt'></td>
+  <td width=112 style='width:84pt'></td>
+  <td width=62 style='width:46pt'></td>
+  <td width=76 style='width:57pt'></td>
+  <td width=70 style='width:52pt'></td>
+  <td width=102 style='width:77pt'></td>
+  <td width=186 style='width:139pt'></td>
+  <td width=124 style='width:93pt'></td>
+  <td width=97 style='width:73pt'></td>
+  <td width=180 style='width:135pt'></td>
+  <td width=118 style='width:88pt'></td>
+  <td width=111 style='width:83pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

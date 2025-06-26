@@ -1,0 +1,526 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../under65_stroke_risk_project.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .25in .75in .25in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;
+	mso-page-orientation:landscape;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(2);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../under65_stroke_risk_project.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#467886" vlink="#96607D" class=xl66>
+
+<table border=0 cellpadding=0 cellspacing=0 width=1095 style='border-collapse:
+ collapse;table-layout:fixed;width:822pt'>
+ <col class=xl66 width=32 style='mso-width-source:userset;mso-width-alt:1137;
+ width:24pt'>
+ <col class=xl74 width=64 style='width:48pt'>
+ <col class=xl78 width=96 style='mso-width-source:userset;mso-width-alt:3413;
+ width:72pt'>
+ <col class=xl66 width=238 style='mso-width-source:userset;mso-width-alt:8476;
+ width:179pt'>
+ <col class=xl79 width=665 style='mso-width-source:userset;mso-width-alt:23637;
+ width:499pt'>
+ <tr height=24 style='height:18.0pt'>
+  <td height=24 class=xl66 width=32 style='height:18.0pt;width:24pt'></td>
+  <td colspan=4 class=xl148 width=1063 style='width:798pt'>EDA LOG</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl66 width=32 style='height:14.4pt;width:24pt'></td>
+  <td class=xl106 width=64 style='width:48pt'>ID</td>
+  <td class=xl107 width=96 style='border-left:none;width:72pt'>Date</td>
+  <td class=xl106 width=238 style='border-left:none;width:179pt'>Description</td>
+  <td class=xl108 width=665 style='border-left:none;width:499pt'>Observations
+  and Insights</td>
+ </tr>
+ <tr height=110 style='height:82.8pt'>
+  <td height=110 class=xl66 width=32 style='height:82.8pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>1</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/13/2025</td>
+  <td class=xl111 width=238 style='border-top:none;border-left:none;width:179pt'>Context
+  of under 65 focus</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Stroke cases make up <font class="font16">4.87%</font><font class="font14">
+  of the original dataset.<br>
+    2. Of the 249 total stroke cases, </font><font class="font16">159</font><font
+  class="font14"> (</font><font class="font16">&#8776;64%</font><font
+  class="font14">) are patients aged 65 and over—indicating that this age group
+  heavily dominates stroke representation. dominantly represent stroke
+  cases.<br>
+    3.By excluding patients 65 and over, we reduce the</font><font
+  class="font16"> overwhelming effect</font><font class="font14"> of age and
+  allow other risk factors to emerge more clearly.<br>
+    4. After removal, stroke cases under 65 will make up </font><font
+  class="font16">2.20%</font><font class="font14"> of the remaining dataset.</font></td>
+ </tr>
+ <tr height=37 style='height:27.6pt'>
+  <td height=37 class=xl66 width=32 style='height:27.6pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>2</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/13/2025</td>
+  <td class=xl111 width=238 style='border-top:none;border-left:none;width:179pt'>Age
+  column number summary analysis</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  After data filtering, minimum age is 0.08 and max is 64.<br>
+    2. <font class="font16">No outlier</font><font class="font14"> detected
+  using 1.5 x IQR bounds.</font></td>
+ </tr>
+ <tr height=55 style='height:41.4pt'>
+  <td height=55 class=xl66 width=32 style='height:41.4pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>3</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/13/2025</td>
+  <td class=xl111 width=238 style='border-top:none;border-left:none;width:179pt'>Average
+  glucose level number summary analysis</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Average glucose level shows large outliers over the 1.5 x IQR bound.<br>
+    2. Upon research, glucose levels can be as extreme as over 600; thus,
+  outliers were deemed <font class="font16">possibly valid</font><font
+  class="font14"> and not removed.</font></td>
+ </tr>
+ <tr height=37 style='height:27.6pt'>
+  <td height=37 class=xl66 width=32 style='height:27.6pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>4</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/13/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Bmi
+  column number summary analysis</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  The number summary for bmi shows large value<font class="font16"> outliers</font><font
+  class="font14"> when using 1.5 x IQR upper bound.<br>
+    2. Upon investigation, bmi of 97 or more is</font><font class="font16">
+  rare</font><font class="font14"> but possible. Thus, data with large values
+  were </font><font class="font16">preserved</font><font class="font14">.</font></td>
+ </tr>
+ <tr height=74 style='height:55.2pt'>
+  <td height=74 class=xl66 width=32 style='height:55.2pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>5</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/13/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Impute
+  null bmi values</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  The bmi column contains large outliers, making the <font class="font16">mean</font><font
+  class="font14"> an</font><font class="font16"> unsuitable</font><font
+  class="font14"> choice for imputation. The median value (</font><font
+  class="font16">27.7</font><font class="font14">) was selected as it provides
+  a more robust and less disruptive replacement for nulls.<br>
+    2. After imputation, summary statistics such as mean and IQR shifted
+  slightly, but not enough to compromise data integrity or require further
+  adjustment.</font></td>
+ </tr>
+ <tr height=147 style='height:110.4pt'>
+  <td height=147 class=xl66 width=32 style='height:110.4pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>6</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/13/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Bin
+  Continuous Features</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>Based
+  on CDC Standards, the age group was binned into:<br>
+    * children(0-17), young adult(18-24),<span style='mso-spacerun:yes'> 
+  </span>adults(25-34), midlife adults(34-44), older adults(45-54),
+  pre-seniors(55-64)<br>
+    <br>
+    Based on CDC standards, avg_glucose_level was binned into:<br>
+    * hypoglycemic(&lt;70), normal (70-99), pre-diabetic (100-125), diabetic
+  (126-199), and high diabetes (200+)<br>
+    <br>
+    Based on CDC standards, bmi was binned into:<br>
+    * underweight, normal weight, overweight, obesity class 1, obesity class 2,
+  and obesity class 3</td>
+ </tr>
+ <tr height=74 style='height:55.2pt'>
+  <td height=74 class=xl66 width=32 style='height:55.2pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>7</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/13/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Gender
+  Distribution Analysis</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Females represent <font class="font16">58.40%</font><font class="font14"> of
+  the under 65 population and accounts for </font><font class="font16">53.33%</font><font
+  class="font14"> of the stroke cases, the stroke rate is skewed because of the
+  </font><font class="font17">difference in population representation</font><font
+  class="font14"> and not overall risk. <br>
+    2. </font><font class="font16">Males have a higher stroke rate</font><font
+  class="font14"> compared to women within their respective groups (</font><font
+  class="font16">2.47% vs 2.01%</font><font class="font14">).<br>
+    3. These findings suggest that </font><font class="font16">men under 65</font><font
+  class="font14"> may</font><font class="font17"> require more targeted early
+  screening </font><font class="font14">compared to women.</font></td>
+ </tr>
+ <tr height=110 style='height:82.8pt'>
+  <td height=110 class=xl66 width=32 style='height:82.8pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>8</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/13/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Age
+  Group Distribution Analysis</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.The
+  age distribution of patients under 65 is fairly even, except for<font
+  class="font16"> young adults (9.31%)</font><font class="font14">, who
+  represent roughly half the size of other groups.<br>
+    2. </font><font class="font16">In-group stroke risk increases steadily with
+  age</font><font class="font14">, peaking at </font><font class="font16">7.05</font><font
+  class="font14">% among pre-seniors. Children (</font><font class="font16">0.23%</font><font
+  class="font14">) and young adults (</font><font class="font16">0%</font><font
+  class="font14">) show very low stroke rates.<br>
+    3. </font><font class="font16">Pre-seniors (55–64) account for 58.89% of
+  all stroke cases under 65</font><font class="font14">, reinforcing the
+  dominance of age as a stroke risk factor, even before age 65.</font></td>
+ </tr>
+ <tr height=55 style='height:41.4pt'>
+  <td height=55 class=xl66 width=32 style='height:41.4pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>9</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/14/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Engineer
+  Categorical Column Values</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Added hypertension status, heart_disease_status, ever_married_status, and
+  stroke_status columns.<br>
+    2. Replaced 0/1 and no/yes values to more interpretable version (no
+  hypertension/hypertension, no heart disease /heart disease, never
+  married/married, no stroke/ had stroke.</td>
+ </tr>
+ <tr height=92 style='height:69.0pt'>
+  <td height=92 class=xl66 width=32 style='height:69.0pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>10</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/14/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Work
+  Type Distribution Analysis</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Private job workers make up<font class="font16"> 59.04%</font><font
+  class="font14"> of the population.<br>
+    2. Self-employed(</font><font class="font16">2.97%</font><font
+  class="font14">) and government job<span style='mso-spacerun:yes'>  </span>(</font><font
+  class="font16">3.04%</font><font class="font14">) workers have a </font><font
+  class="font16">slightly higher</font><font class="font14"> stroke rate
+  compared to private company workers (</font><font class="font16">2.45%</font><font
+  class="font14">).<br>
+    3. Although private company workers account for 65.56% of stroke cases,
+  this is likely </font><font class="font16">skewed by their large share</font><font
+  class="font14"> of the total population.</font></td>
+ </tr>
+ <tr height=74 style='height:55.2pt'>
+  <td height=74 class=xl66 width=32 style='height:55.2pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>11</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/14/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Residence
+  Type Distribution Analysis</td>
+  <td class=xl113 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  The distribution for both categories are similar (50.37% vs 49.63%)<br>
+    2. Urban residents (2.33%) have a slightly higher stroke rate than rural
+  residents (2.07%).<br>
+    3. Urban residents (53.33%) represent a higher stroke occurrence rate than
+  rural residents (46.67%) overall.<br>
+    4. The trend largely follows the population distribution where urban
+  residents outnumber the rural residents.</td>
+ </tr>
+ <tr height=74 style='height:55.2pt'>
+  <td height=74 class=xl66 width=32 style='height:55.2pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>12</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/14/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Marriage
+  History Distribution Analysis</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Married people (<font class="font16">59.14%</font><font class="font14">)
+  account for<span style='mso-spacerun:yes'>  </span>20% more than the never
+  married people (</font><font class="font16">40.86%</font><font class="font14">).<br>
+    2. Married people have a</font><font class="font16"> 3.36%</font><font
+  class="font14"> risk of having a stroke,</font><font class="font17"> compared
+  to other married people</font><font class="font14">, while people that are
+  never married experience stroke at a rate of</font><font class="font16">
+  0.54%</font><font class="font14"> </font><font class="font17">compared to
+  other never married people</font><font class="font14">. <br>
+    3.<span style='mso-spacerun:yes'>  </span>Married individuals account for
+  90% of all stroke cases in the dataset.</font></td>
+ </tr>
+ <tr height=92 style='height:69.0pt'>
+  <td height=92 class=xl66 width=32 style='height:69.0pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>13</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/14/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Smoking
+  Status Distribution Analysis</td>
+  <td class=xl113 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Never smoked and unknown status patients represent roughly <font
+  class="font16">69%</font><font class="font14"> of the data.<br>
+    2. Having a history of smoking (smokes, formerly smokes) showed a </font><font
+  class="font16">higher stroke rate</font><font class="font14"> </font><font
+  class="font16">(3.79% </font><font class="font14">and </font><font
+  class="font16">3.76%</font><font class="font14">).<br>
+    3. Smoking or formerly smoked shows </font><font class="font16">almost
+  double</font><font class="font14"> the rate of stroke occurrence compared to
+  the other groups.<br>
+    4. Smokes and formerly smokes contributed roughly the </font><font
+  class="font16">same number of stroke occurrences</font><font class="font14">
+  while being roughly </font><font class="font16">half the size</font><font
+  class="font14"> of the other two groups.</font></td>
+ </tr>
+ <tr height=92 style='height:69.0pt'>
+  <td height=92 class=xl66 width=32 style='height:69.0pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>14</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/14/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>BMI
+  Distribution Analysis</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Patients within the normal and overweight categories make up<font
+  class="font16"> ~55%</font><font class="font14"> of the population.<br>
+    2. Patients in the </font><font class="font16">normal weight</font><font
+  class="font14"> range are</font><font class="font16"> 7 to 8 times less
+  likely</font><font class="font14"> to experience stroke.<br>
+    3. Patients that are</font><font class="font16"> above normal weigh</font><font
+  class="font14">t have a stroke rate of around</font><font class="font16"> 3%</font><font
+  class="font14">.<br>
+    4. Patients in the </font><font class="font16">overweight category</font><font
+  class="font14"> represent</font><font class="font16"> 42.22%</font><font
+  class="font14"> of the overall stroke cases while making up </font><font
+  class="font16">28.47% of the population</font><font class="font14">.<span
+  style='mso-spacerun:yes'> </span></font></td>
+ </tr>
+ <tr height=118 style='mso-height-source:userset;height:88.8pt'>
+  <td height=118 class=xl66 width=32 style='height:88.8pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>15</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/15/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Average
+  Glucose Level Distribution Analysis</td>
+  <td class=xl113 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Patients with <font class="font16">normal</font><font class="font14"> average
+  glucose level account for </font><font class="font16">48.19%</font><font
+  class="font14"> of the population and </font><font class="font16">36.67%</font><font
+  class="font14"> of the total stroke cases. The dominant representation of
+  this group accounts for the higher stroke case occurrence.<br>
+    2. Patients with </font><font class="font16">high diabetes</font><font
+  class="font14"> is the least represented at </font><font class="font16">5.59%</font><font
+  class="font14"> but it accounts for </font><font class="font16">18.89%</font><font
+  class="font14"> of stroke cases which is the second highest representation of
+  stroke overall. Patients with high diabetes also shows an in group stroke
+  rate of </font><font class="font16">7.46%, </font><font class="font14">which
+  is </font><font class="font16">more than twice the rate of other groups</font><font
+  class="font14">.<span style='mso-spacerun:yes'> </span></font></td>
+ </tr>
+ <tr height=74 style='height:55.2pt'>
+  <td height=74 class=xl66 width=32 style='height:55.2pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>16</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/15/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Heart
+  Disease Distribution Analysis</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Patients with heart disease only represents<font class="font16"> 2.35%</font><font
+  class="font14"> of the population while accounting for </font><font
+  class="font16">14.44%</font><font class="font14"> of overall stroke
+  cases.<br>
+    2. Patients with heart disease have a stroke rate of</font><font
+  class="font16"> 13.54%</font><font class="font14"> or about 6x more than
+  patients without heart disease </font><font class="font16">(1.93%</font><font
+  class="font14">).</font></td>
+ </tr>
+ <tr height=74 style='height:55.2pt'>
+  <td height=74 class=xl66 width=32 style='height:55.2pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>17</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/15/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Hypertension
+  Distribution Analysis</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Although patients with <font class="font17">hypertension</font><font
+  class="font14"> only make up </font><font class="font16">6.57% </font><font
+  class="font14">of the population, they account for </font><font class="font16">17.78%
+  of all stroke cases</font><font class="font14">.<br>
+    2. Patients with hypertension experiences stroke at a rate of</font><font
+  class="font16"> 5.97%</font><font class="font14">, which is </font><font
+  class="font16">more than three times </font><font class="font14">higher than
+  the </font><font class="font16">1.94%</font><font class="font14"> stroke rate
+  among patients without hypertension.<span style='mso-spacerun:yes'> </span></font></td>
+ </tr>
+ <tr height=92 style='height:69.0pt'>
+  <td height=92 class=xl66 width=32 style='height:69.0pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>18</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/15/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Chi-Square
+  Test</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  The <font class="font16">Chi-Square Test</font><font class="font14"> is was
+  used to evaluate the </font><font class="font16">statistical significance</font><font
+  class="font14"> of categorical features in relation to the target variable
+  (stroke).<br>
+    2. Both</font><font class="font16"> gender and residence_type</font><font
+  class="font14"> had p-values that were </font><font class="font16">greater
+  than the 0.05 </font><font class="font14">significance threshold, indicating </font><font
+  class="font16">no statistical significant association</font><font
+  class="font14"> between these two features and stroke in patients under
+  65.<br>
+    3. As a result, gender and residence type will be </font><font
+  class="font16">excluded from further analysis</font><font class="font14">.</font></td>
+ </tr>
+ <tr height=55 style='height:41.4pt'>
+  <td height=55 class=xl66 width=32 style='height:41.4pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>19</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/16/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Mann-Whitney
+  Test</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Excel does not natively have a Mann-Whitney Test so <font class="font16">Python</font><font
+  class="font14"> was used to conduct this test.<br>
+    2. Both</font><font class="font16"> bmi </font><font class="font14">and</font><font
+  class="font16"> average glucose level</font><font class="font14"> tested to
+  have a p value that is significantly</font><font class="font16"> lower than
+  the 0.05</font><font class="font14"> threshold, indicating that they are both</font><font
+  class="font16"> statistically significant predictors of stroke</font><font
+  class="font14"> for patients under the age of 65.</font></td>
+ </tr>
+ <tr height=110 style='height:82.8pt'>
+  <td height=110 class=xl66 width=32 style='height:82.8pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>20</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/16/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Top
+  In-Group Risk Factors</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>The<font
+  class="font16"> top 5</font><font class="font14"> in group stroke risk
+  factors are:<br>
+    1. Heart Disease at </font><font class="font16">13.54%</font><font
+  class="font14"><br>
+    2. High Diabetes at 7.46%<br>
+    3. Pre-Senior age at 7.05%<br>
+    4. Hypertension at 5.97%<br>
+    5. Smokes at 3.79%</font></td>
+ </tr>
+ <tr height=37 style='height:27.6pt'>
+  <td height=37 class=xl66 width=32 style='height:27.6pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>21</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/16/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>In
+  Group Stroke Rate of Change</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Heart disease has the highest in-group stroke rate at 13.54%.<br>
+    2. The decline in rate is<font class="font16"> drastic until the fifth
+  factor </font><font class="font14">(smokes,</font><font class="font16"> 3.79%</font><font
+  class="font14">) and then the decline rate slows down.</font></td>
+ </tr>
+ <tr height=62 style='mso-height-source:userset;height:46.2pt'>
+  <td height=62 class=xl66 width=32 style='height:46.2pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>22</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/16/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Disproportionate
+  Stroke Burden<span style='mso-spacerun:yes'> </span></td>
+  <td class=xl113 width=665 style='border-top:none;border-left:none;width:499pt'>The
+  bar chart shows the following insights:<br>
+    1. Pre-seniors account for <font class="font16">58.89% </font><font
+  class="font14">of the stroke cases while only being </font><font
+  class="font16">18.42%</font><font class="font14"> of the population under
+  65.<br>
+    2. Heart disease accounts for </font><font class="font16">14.44%</font><font
+  class="font14"> of the stroke cases while only being</font><font
+  class="font16"> 2.35</font><font class="font14">% of the population.</font></td>
+ </tr>
+ <tr height=55 style='height:41.4pt'>
+  <td height=55 class=xl66 width=32 style='height:41.4pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>23</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/16/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Age
+  - Heart Disease Distribution</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Pre-seniors (55-64) have the highest heart disease rate at 7.71%<br>
+    2.There is a <font class="font16">drastic increase</font><font
+  class="font14"> in heart disease diagnosis starting with </font><font
+  class="font16">midlife adults (0.58%)</font><font class="font14">, rising to </font><font
+  class="font16">older adults (3.88%)</font><font class="font14">, and peaking
+  with </font><font class="font16">pre-seniors (7.71%)</font><font
+  class="font14">.</font></td>
+ </tr>
+ <tr height=55 style='height:41.4pt'>
+  <td height=55 class=xl66 width=32 style='height:41.4pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>24</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/16/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Age
+  - Hypertension Distribution</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Pre-seniors have the highest rate of hypertension at<font class="font16">
+  15.56%.</font><font class="font14"><br>
+    2. The rate of hypertension diagnosis starts</font><font class="font16">
+  increasing drastically in adulthood</font><font class="font14"> </font><font
+  class="font16">(25-34)</font><font class="font14">.<br>
+    3. </font><font class="font16">Screening and preventive care for
+  hypertension should begin in the mid-20s</font><font class="font14">, long
+  before hypertension manifests.</font></td>
+ </tr>
+ <tr height=74 style='height:55.2pt'>
+  <td height=74 class=xl66 width=32 style='height:55.2pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>25</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/16/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Age
+  - Diabetes Distribution</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.
+  Diabetes affects<font class="font16"> 1 in<span style='mso-spacerun:yes'> 
+  </span>4 </font><font class="font14">(26.60%)</font><font class="font16">
+  pre-seniors</font><font class="font14"> (55-64). <br>
+    2.</font><font class="font16"> Drastic increase in diabetes rate</font><font
+  class="font14"> starts at </font><font class="font16">adult age</font><font
+  class="font14"> (25-34) at </font><font class="font16">9.38%</font><font
+  class="font14"> and </font><font class="font16">doubles</font><font
+  class="font14"> at older </font><font class="font16">adult stage</font><font
+  class="font14"> (45-54) at</font><font class="font16"> 20.30%</font><font
+  class="font14">.<br>
+    3.</font><font class="font16"> Screening and preventive care plan</font><font
+  class="font14"> should be considered for patients </font><font class="font16">starting
+  mid 20s</font><font class="font14">.<span style='mso-spacerun:yes'> </span></font></td>
+ </tr>
+ <tr height=74 style='height:55.2pt'>
+  <td height=74 class=xl66 width=32 style='height:55.2pt;width:24pt'></td>
+  <td class=xl109 width=64 style='border-top:none;width:48pt'>26</td>
+  <td class=xl110 width=96 style='border-top:none;border-left:none;width:72pt'>6/16/2025</td>
+  <td class=xl112 width=238 style='border-top:none;border-left:none;width:179pt'>Age
+  - Smoking Distribution</td>
+  <td class=xl111 width=665 style='border-top:none;border-left:none;width:499pt'>1.<font
+  class="font16"> Stroke risk remains elevated even after quitting</font><font
+  class="font14">, prevention must start early. Former smokers show</font><font
+  class="font16"> similar stroke risk</font><font class="font14"> to current
+  smokers, emphasizing that </font><font class="font16">not starting at all </font><font
+  class="font14">is the most effective protection.<br>
+    3. </font><font class="font16">Most smokers begin before age 35</font><font
+  class="font14">. With smoking history</font><font class="font16"> rising
+  sharply between ages 18 and 34</font><font class="font14">, prevention
+  campaigns must target</font><font class="font16"> young adults and
+  adolescents</font><font class="font14"> before lifetime risk is locked in.</font></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=32 style='width:24pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=96 style='width:72pt'></td>
+  <td width=238 style='width:179pt'></td>
+  <td width=665 style='width:499pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

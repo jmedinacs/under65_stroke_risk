@@ -1,0 +1,332 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../under65_stroke_risk_project.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(1);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../under65_stroke_risk_project.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#467886" vlink="#96607D" class=xl66>
+
+<table border=0 cellpadding=0 cellspacing=0 width=1469 style='border-collapse:
+ collapse;table-layout:fixed;width:1100pt'>
+ <col class=xl66 width=64 style='width:48pt'>
+ <col class=xl66 width=191 style='mso-width-source:userset;mso-width-alt:6798;
+ width:143pt'>
+ <col class=xl66 width=127 style='mso-width-source:userset;mso-width-alt:4522;
+ width:95pt'>
+ <col class=xl66 width=258 style='mso-width-source:userset;mso-width-alt:9159;
+ width:193pt'>
+ <col class=xl66 width=255 style='mso-width-source:userset;mso-width-alt:9073;
+ width:191pt'>
+ <col class=xl66 width=192 style='mso-width-source:userset;mso-width-alt:6826;
+ width:144pt'>
+ <col class=xl66 width=382 style='mso-width-source:userset;mso-width-alt:13568;
+ width:286pt'>
+ <tr height=28 style='height:21.0pt'>
+  <td height=28 class=xl66 width=64 style='height:21.0pt;width:48pt'></td>
+  <td colspan=6 class=xl163 width=1405 style='width:1052pt'>Original Features</td>
+ </tr>
+ <tr class=xl74 height=24 style='height:18.0pt'>
+  <td height=24 class=xl74 width=64 style='height:18.0pt;width:48pt'></td>
+  <td class=xl162 width=191 style='border-top:none;width:143pt'>Column Name</td>
+  <td class=xl162 width=127 style='border-top:none;border-left:none;width:95pt'>Data
+  Type</td>
+  <td class=xl162 width=258 style='border-top:none;border-left:none;width:193pt'>Description</td>
+  <td class=xl162 width=255 style='border-top:none;border-left:none;width:191pt'>Categories</td>
+  <td class=xl162 width=192 style='border-top:none;border-left:none;width:144pt'>Missing
+  Values</td>
+  <td class=xl162 width=382 style='border-top:none;border-left:none;width:286pt'>Comment</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl66 width=64 style='height:14.4pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>id</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>INTEGER</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Unique
+  numerical identifier for patients.</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>Continuous</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>&nbsp;</td>
+ </tr>
+ <tr height=77 style='height:57.6pt'>
+  <td height=77 class=xl66 width=64 style='height:57.6pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>gender</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>TEXT</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Patient
+  gender profile</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>male,
+  female, other</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>&quot;other&quot;
+  is removed due to being a single instance which makes it both statistically
+  insignificant and noise potential.<br>
+    Tested as statistically insignificant (Chi-Square Test), not included in
+  formal analysis.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl66 width=64 style='height:14.4pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>age</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>NUMERIC</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Patient's
+  age at data collection</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>Continuous</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>Bin
+  to medically accepted (CDC) categories.</td>
+ </tr>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl66 width=64 style='height:28.8pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>hypertension</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>INTEGER</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Presence
+  or absence of hypertension in patient profile.</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>0
+  (no) and 1 (yes)</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>Change
+  to no hypertension (0) and hypertension (1) for easier interpretation.</td>
+ </tr>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl66 width=64 style='height:28.8pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>heart_disease</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>INTEGER</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Presence
+  or absence of heart disease in patient profile.</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>1
+  (no) and 1 (yes)</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>Change
+  to no heart disease (0) and heart disease (1) for easier interpretation.</td>
+ </tr>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl66 width=64 style='height:28.8pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>ever_married</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>TEXT</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Patient's
+  history of marriage</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>no
+  / yes</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>Change
+  to never married (no) and married (yes) for easier interpretation.</td>
+ </tr>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl66 width=64 style='height:28.8pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>work_type</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>TEXT</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Patient's
+  job type.</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>private,
+  self-employed, govt_job, children, never worked</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>Consider
+  standardization if implementing modeling.</td>
+ </tr>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl66 width=64 style='height:28.8pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>residence_type</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>TEXT</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Patient's
+  residence type</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>urban,
+  rural</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>Tested
+  as statistically insignificant (Chi-Square Test), not included in formal
+  analysis.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl66 width=64 style='height:14.4pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>avg_glucose_level</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>NUMERIC</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Patient's
+  average glucose level</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>Continuous</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>Bin
+  to medically accepted (CDC) categories.</td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 class=xl66 width=64 style='height:14.4pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>bmi</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>NUMERIC</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Patient's
+  bmi profile</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>Continuous</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>201
+  null values</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>Bin
+  to medically accepted (CDC) categories.</td>
+ </tr>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl66 width=64 style='height:28.8pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>smoking_status</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>TEXT</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Patient's
+  smoking history</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>never
+  smoked, smokes, formerly smoked, unknown</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>Investigate
+  &quot;unknown&quot; to test significance.</td>
+ </tr>
+ <tr height=58 style='height:43.2pt'>
+  <td height=58 class=xl66 width=64 style='height:43.2pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>stroke</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>INTEGER</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Patient
+  having had stroke or not ever having stroke.<br>
+    Target feature.</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>0
+  (no stroke) and 1 (stroke)</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>Keep
+  0 and 1 for modeling.<br>
+    Convert to had stroke (1) and no stroke (0) for easier interpretation in
+  data analysis.</td>
+ </tr>
+ <tr height=38 style='mso-height-source:userset;height:28.8pt'>
+  <td height=38 class=xl66 width=64 style='height:28.8pt;width:48pt'></td>
+  <td colspan=6 class=xl164 width=1405 style='width:1052pt'>Feature Engineered
+  Columns</td>
+ </tr>
+ <tr height=30 style='mso-height-source:userset;height:22.2pt'>
+  <td height=30 class=xl66 width=64 style='height:22.2pt;width:48pt'></td>
+  <td class=xl162 width=191 style='width:143pt'>Column Name</td>
+  <td class=xl162 width=127 style='border-left:none;width:95pt'>Data Type</td>
+  <td class=xl162 width=258 style='border-left:none;width:193pt'>Description</td>
+  <td class=xl162 width=255 style='border-left:none;width:191pt'>Categories</td>
+  <td class=xl162 width=192 style='border-left:none;width:144pt'>Missing Values</td>
+  <td class=xl162 width=382 style='border-left:none;width:286pt'>Comment</td>
+ </tr>
+ <tr height=58 style='height:43.2pt'>
+  <td height=58 class=xl66 width=64 style='height:43.2pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>age_group</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>TEXT</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Binned
+  age into CDC standard categories</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>children(0-17),
+  young adult(18-24), adult (25-34), midlife adult (35-44), older adult
+  (45-54), pre-seniors (55-64)</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>&nbsp;</td>
+ </tr>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl66 width=64 style='height:28.8pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>hypertension_status</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>TEXT</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Converted
+  binary (0/1) values to no hypertension / hypertension</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>no
+  hypertension, hypertension</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>&nbsp;</td>
+ </tr>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl66 width=64 style='height:28.8pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>heart_disease_status</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>TEXT</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Converted
+  binary (0/1) values to no heart disease / heart disease</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>no
+  heart disease, heart disease</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>&nbsp;</td>
+ </tr>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl66 width=64 style='height:28.8pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>ever_married_status</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>TEXT</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Converted
+  no/yes to never married / married</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>never
+  married, married</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>&nbsp;</td>
+ </tr>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl66 width=64 style='height:28.8pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>stroke_status</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>TEXT</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Conterted
+  binary (0/1) to no stroke / had stroke</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>no
+  stroke, had stroke</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>&nbsp;</td>
+ </tr>
+ <tr height=58 style='height:43.2pt'>
+  <td height=58 class=xl66 width=64 style='height:43.2pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>glucose_category</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>TEXT</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Binned
+  continuous data to CDC standard categories</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>hypoglycemic(&lt;70),
+  normal (70-99), pre-diabetic (100-125), diabetic (126-199), high diabetes
+  (200+)</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>&nbsp;</td>
+ </tr>
+ <tr height=58 style='height:43.2pt'>
+  <td height=58 class=xl66 width=64 style='height:43.2pt;width:48pt'></td>
+  <td class=xl68 width=191 style='border-top:none;width:143pt'>bmi_category</td>
+  <td class=xl68 width=127 style='border-top:none;border-left:none;width:95pt'>TEXT</td>
+  <td class=xl68 width=258 style='border-top:none;border-left:none;width:193pt'>Binned
+  continuous data to CDC standard categories</td>
+  <td class=xl68 width=255 style='border-top:none;border-left:none;width:191pt'>underweight,
+  normal weight, overweight, obesity clase 1, obesity class 2, obesity class 3</td>
+  <td class=xl68 width=192 style='border-top:none;border-left:none;width:144pt'>none</td>
+  <td class=xl68 width=382 style='border-top:none;border-left:none;width:286pt'>&nbsp;</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=64 style='width:48pt'></td>
+  <td width=191 style='width:143pt'></td>
+  <td width=127 style='width:95pt'></td>
+  <td width=258 style='width:193pt'></td>
+  <td width=255 style='width:191pt'></td>
+  <td width=192 style='width:144pt'></td>
+  <td width=382 style='width:286pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

@@ -10,7 +10,7 @@
 
 ## Quick Access
 - [Watch the 3-Minute Project Walkthrough](#)
-- [Explore the Interactive Tableau Dashboard](#)
+- [Explore the Interactive Tableau Dashboard](https://public.tableau.com/views/Under65StrokeRiskDashboard/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 - [View Full Slide Presentation](#)
 
 ## Executive Summary
@@ -70,15 +70,15 @@ Below is a quick overview of the dataset structure:
 - **Mann-Whitney Test** conducted for continuous data using **Python**, bmi, age, and average glucose level are confirmed statistically significant.  
 - Demographics and health features assesses for *population representation, in-group stroke representation, and overall stroke case representation*.
 - Age versus top risk factors (**medically alterable**) analysis to gain insight on their occurence and progression with respect to age.
-- Full and details can be found using the [EDA log](docs/under65_eda_log.pdf).
+- Full and details can be found in the [EDA log](docs/under65_eda_log.pdf).
 
 ## Key Findings 
 
 ### Why Focus on Patients Under 65?
 
-Age is a dominant predictor of stroke. Our original dataset contained 249 stroke cases and **159 of those stroke cases are patients that are 65 and above**. The dominance of age easily overwhelm and mask the effect of other risk factors.  
+Age is a dominant predictor of stroke. Our original dataset contained 249 stroke cases and **159 of those stroke cases are patients that are 65 and above**. The dominance of age easily overwhelms and mask the effect of other risk factors.  
 
-Patients over 65 in this dataset averaged more than one major risk factor (heart disease, hypertension, diabetes, and smoking). Younger patients on the other hand, averaged less than one risk factor. By focusing on patient records under 65, we gain a clearer view of how individual risk factors affect stroke rate.  
+Patients over 65 in this dataset averaged more than one major risk factor (heart disease, hypertension, diabetes, and smoking). Younger patients, on the other hand, averaged less than one risk factor. By focusing on patient records under 65, we gain a clearer view of how individual risk factors affect stroke rate.  
 
 ![Average Risk Factor by Age Group](presentation_visuals/under65_average_risk_factors.png)  
 *Figure 2. On average, patients under 65 have fewer risk factors, allowing for clearer analysis of individual risk impact.*
@@ -134,8 +134,46 @@ Patients who **smoke** have a stroke rate of **3.79%**, which is only slightly h
 Nearly 1 in 4 patients have a history of smoking by young adulthood (ages 18–24). When it comes to smoking, **prevention** is the most effective strategy, since the stroke rate remains high even after quitting.
 
 ![Age vs Smoking Table](presentation_visuals/under65_age_smoking_table.png)  
-*Figure 9. Sharp increase in the number of patients that have a history of smoking during young adult stage.*
+*Figure 9. Sharp increase in the number of patients that have a history of smoking during young adult stage.*  
 
+## Recommendations
+
+- Begin **routine hypertension screening** at age 18 through standard blood pressure checks in primary care.
+- Launch **prevention and education efforts for smoking** by age 18, before risk levels spike.
+- Initiate **diabetes screening and care planning** starting at age 25 for patients with elevated glucose or risk factors.
+- Implement **heart disease screening protocols** by age 35, as prevalence increases sharply in midlife.
+
+
+## Call to Action
+
+- **Prevention is better than treatment** — stroke risk factors may develop **well before** the age of 65.
+- Screening and prevention plans should begin as early as **age 18 to 35**, depending on individual risk factors.
+- **Public health leaders and providers** can reduce the stroke burden by **updating protocols** and **targeting the right age groups**.
+- **Future Work**: Build a **machine learning model** to estimate stroke risk based on each patient's **current health profile**, enabling individualized, proactive care planning.
+
+## Links and Resources
+
+- [3-Minute Project Walkthrough](#)  
+- [Interactive Tableau Dashboard](https://public.tableau.com/views/Under65StrokeRiskDashboard/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
+- [Slide Presentation](#)  
+- [Excel Project Files (Cleaning, EDA, Statistical Testing)](#) 
+- [SQL Scripts (Filtering, Feature Grouping, Query Outputs)](#)  
+- [Python Script (Mann-Whitney Test)](#)  
+- [Data Cleaning Log (PDF)](#)  
+- [EDA Log (PDF)](#)  
+
+
+## How to Use This Project
+
+This project presents a full end-to-end analysis of stroke risk in patients under age 65. It includes:
+
+- SQL scripts used for filtering and structuring the raw dataset
+- Excel and Python files for data cleaning, EDA, and statistical testing
+- PDF logs documenting cleaning and exploration steps
+- An interactive Tableau dashboard for data visualization
+- A 3-minute walkthrough video and full slide presentation
+
+All outputs are available in this repository. No setup is required unless you choose to replicate or extend the analysis. Start with the README and use the links above to explore the process, insights, and tools used.
 
 
 
