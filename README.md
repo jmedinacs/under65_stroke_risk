@@ -9,7 +9,7 @@
 - **Slide Deck** (Communication of Story Through Presentation and Walkthrough)
 
 ## Quick Access
-- [Watch the 3-Minute Project Walkthrough](#)
+- [Watch the Project Walkthrough](#)
 - [Explore the Interactive Tableau Dashboard](https://public.tableau.com/views/Under65StrokeRiskDashboard/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 - [View Full Slide Presentation](#)
 
@@ -153,7 +153,7 @@ Nearly 1 in 4 patients have a history of smoking by young adulthood (ages 18–2
 
 ## Links and Resources
 
-- [3-Minute Project Walkthrough](#)  
+- [Project Walkthrough Video](#)  
 - [Interactive Tableau Dashboard](https://public.tableau.com/views/Under65StrokeRiskDashboard/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
 - [Slide Presentation](#)  
 - [Excel Project Files (Cleaning, EDA, Statistical Testing)](#) 
