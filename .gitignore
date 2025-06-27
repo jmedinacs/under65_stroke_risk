@@ -1,4 +1,4 @@
-# Byte-compiled / optimized / DLL files
+# Python cache and compiled files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -6,10 +6,19 @@ __pycache__/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints
 
-# CSVs / exports (optional)
+# Ignore dev or temp folders
+python_stat_test/
+src/
+notebooks/
+scripts/
+
+# Keep clean code
+!python/
+
+# CSVs / exports
 *.csv
 
-# VS Code metadata (if using)
+# VS Code settings
 .vscode/
 
 # System files
