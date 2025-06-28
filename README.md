@@ -69,7 +69,7 @@ Below is a quick overview of the dataset structure:
 - Categorical features assessed for **statistical significance using the Chi-Square p-value test** (found gender and residence type as insignificant).
 - **Mann-Whitney Test** conducted for continuous data using **Python**, bmi, age, and average glucose level are confirmed statistically significant.  
 - Demographics and health features assesses for *population representation, in-group stroke representation, and overall stroke case representation*.
-- Age versus top risk factors (**medically alterable**) analysis to gain insight on their occurence and progression with respect to age.
+- Age versus top risk factors (**medically modifiable**) analysis to gain insight on their occurence and progression with respect to age.
 - Full and details can be found in the [EDA log](docs/under65_eda_log.pdf).
 
 ## Key Findings 
@@ -156,11 +156,11 @@ Nearly 1 in 4 patients have a history of smoking by young adulthood (ages 18–2
 - [Project Walkthrough Video](#)  
 - [Interactive Tableau Dashboard](https://public.tableau.com/views/Under65StrokeRiskDashboard/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)  
 - [Slide Presentation](#)  
-- [Excel Project Files (Cleaning, EDA, Statistical Testing)](#) 
-- [SQL Scripts (Filtering, Feature Grouping, Query Outputs)](#)  
-- [Python Script (Mann-Whitney Test)](#)  
-- [Data Cleaning Log (PDF)](#)  
-- [EDA Log (PDF)](#)  
+- [Excel Project Files (Cleaning, EDA, Statistical Testing)](docs/under65_stroke_risk_project.html) 
+- [SQL Scripts (Filtering, Feature Grouping, Query)](SQL/)  
+- [Python Script (Mann-Whitney Test)](python/mann_whitney_test.py)  
+- [cleaning log](docs/under65_cleaning_log.pdf) 
+- [EDA log](docs/under65_eda_log.pdf)
 
 
 ## How to Use This Project
